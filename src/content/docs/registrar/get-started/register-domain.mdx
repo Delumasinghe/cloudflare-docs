@@ -1,43 +1,166 @@
----
-pcx_content_type: how-to
-title: Register a new domain
-sidebar:
-  order: 1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Da-Luke Kids</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
----
+        header {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
 
-## Prerequisites and restrictions
+        header .logo h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
 
-* Cloudflare Registrar is only available for customers that use Cloudflare as their authoritative DNS provider (also known as a [full setup](/dns/zone-setups/)).
-* Cloudflare Registrar does not currently support internationalized domain names (IDNs), also known as Unicode.
-* You must have a [verified account email address](/fundamentals/setup/account/verify-email-address/), to transfer or register domains.
+        header .logo p {
+            margin: 0;
+            font-size: 1rem;
+            font-style: italic;
+        }
 
-***
+        nav {
+            background-color: #333;
+            color: white;
+        }
 
-## How to register a new domain
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
 
-:::note
-If you are registering a `.us` domain, refer to the [Additional requirements for .US domains](/registrar/top-level-domains/us-domains/) before proceeding.
-:::
+        nav ul li {
+            margin: 0 1rem;
+        }
 
-1. Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/login) and select your account.
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+        }
 
-2. Go to **Domain Registration** > **Register Domains**.
+        nav ul li a:hover {
+            color: #4caf50;
+        }
 
-3. In the search box, enter the domain name you wish to register, and select **Search**. You may also enter one or more keywords. The search results will contain a list of suggested domains. If the domain you entered does not appear in the list, this means it is not available for registration.
+        main {
+            padding: 2rem;
+        }
 
-:::caution[Important]
+        main section {
+            margin-bottom: 2rem;
+        }
 
+        main h2 {
+            color: #4caf50;
+            border-bottom: 2px solid #4caf50;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
 
-Cloudflare Registrar currently does not support internationalized domain names (IDNs), also known as unicode. For that reason, you cannot search for words with special characters, such as `à`, `ü`, `ç`, among others.
+        .video-list {
+            list-style: none;
+            padding: 0;
+        }
 
+        .video-list li {
+            margin-bottom: 0.5rem;
+        }
 
-:::
+        .video-list li a {
+            text-decoration: none;
+            color: #4caf50;
+            font-weight: bold;
+        }
 
-4. Select **Purchase** on the domain you wish to register. In rare instances, a domain that is not available for registration may appear in the search results. After selecting **Purchase**, a definitive availability check will be performed to confirm that the domain is actually available for registration.
+        .video-list li a:hover {
+            text-decoration: underline;
+        }
 
-5. Select the term (number of years) you wish to register the domain from the **Payment option** drop-down menu. Most top-level domains (TLDs) can be registered for a maximum of ten years. Some TLDs may have different term limits and these will be reflected in the drop-down options.
+        .contact-list {
+            list-style: none;
+            padding: 0;
+        }
 
+        .contact-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-list li a {
+            text-decoration: none;
+            color: #4caf50;
+            font-weight: bold;
+        }
+
+        .contact-list li a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Da-Luke Kids</h1>
+            <p>Explore. Learn. Grow.</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to Da-Luke Kids! Our mission is to make learning fun and engaging for kids. Watch our videos to explore the world of education and creativity!</p>
+        </section>
+        <section id="videos">
+            <h2>Our Videos</h2>
+            <p>Click on the video links below to watch directly on YouTube:</p>
+            <ul class="video-list">
+                <li><a href="https://www.dkyt.com" target="_blank">Video 1: Fun with Science</a></li>
+                <li><a href="#" target="_blank">Video 2: Amazing Animals</a></li>
+                <li><a href="#" target="_blank">Video 3: Math Made Easy</a></li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions or suggestions? Reach out to us at:</p>
+            <ul class="contact-list">
+                <li>Email: <a href="mailto:daluketeam@gmail.com">daluketeam@gmail.com</a></li>
+                <li>Facebook: <a href="https://www.facebook.com/profile.php?id=61568277166224&mibextid=ZbWKwL" target="_blank">Da-Luke Kids on Facebook</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Da-Luke Kids. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
    The expiration date and price will update automatically based on the term selected. The **Renew On** date is the date that the system will attempt to auto-renew the domain. All registrations have Auto-renew turned on by default. However, you may [disable this option](/registrar/account-options/renew-domains/) at any time.
 
 6. Enter the contact details for the domain. These details will be used to create all of the required contacts (Registrant, Admin, Technical, and Billing), and may be updated after registration is completed. Refer to [Contact requirements](#contact-requirements) to learn the specific requirements for each contact field.
